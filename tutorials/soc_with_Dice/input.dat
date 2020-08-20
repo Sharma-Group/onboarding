@@ -1,0 +1,18 @@
+nocc 7
+6 2 3 0 1 4 5 
+end
+nroots 1
+schedule 
+0	1e-08
+end
+davidsonTol 5e-05
+dE 1e-08
+DoRDM
+nPTiter 0
+epsilon2 1e-07
+sampleN 200
+noio 
+prefix /home/xubo/HandOn/dice/shci3
+maxiter 6
+
+

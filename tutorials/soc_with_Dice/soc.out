@@ -1,0 +1,243 @@
+
+
+**************************************************************
+Dice  Copyright (C) 2017  Sandeep Sharma
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+
+Author:       Sandeep Sharma
+Contributors: James E Smith, Adam A Holmes, Bastien Mussard
+For detailed documentation on Dice please visit
+https://sanshar.github.io/Dice/
+Please visit our group page for up to date information on other projects
+http://www.colorado.edu/lab/sharmagroup/
+**************************************************************
+
+
+**************************************************************
+Input file  :
+**************************************************************
+nroots 6
+nocc 7
+0 1 2 3 4 5 6 
+0 1 2 3 4 5 7 
+0 1 2 3 4 6 7 
+0 1 2 3 5 6 7 
+0 1 2 4 5 6 7 
+0 1 3 4 5 6 7 
+
+# variational parameters
+davidsonTol 1e-5
+dE          1e-8
+maxiter     10
+schedule
+0    1e-3
+3    1e-4
+5    1e-5
+end
+
+# perturbation parameters
+#nPTiter 0
+epsilon2      1e-7
+epsilon2large 5e-6
+targeterror   5e-6
+sampleN       400
+
+# SOC
+dosoc
+
+
+
+
+**************************************************************
+VARIATIONAL STEP  
+**************************************************************
+Iter Root       Eps1   #Var. Det.               Energy   #Davidson     Time(s)
+   0    0    1.00e-03           6     -6850.6807753952          1        0.00
+   0    1    1.00e-03           6     -6850.6807753952          1        0.00
+   0    2    1.00e-03           6     -6850.6807753951          1        0.00
+   0    3    1.00e-03           6     -6850.6807753951          1        0.00
+   0    4    1.00e-03           6     -6850.6671901956          1        0.00
+   0    5    1.00e-03           6     -6850.6671901956          1        0.00
+
+   1    0    1.00e-03           6     -6850.6807753952          1        0.00
+   1    1    1.00e-03           6     -6850.6807753952          1        0.00
+   1    2    1.00e-03           6     -6850.6807753951          1        0.00
+   1    3    1.00e-03           6     -6850.6807753951          1        0.00
+   1    4    1.00e-03           6     -6850.6671901956          1        0.00
+   1    5    1.00e-03           6     -6850.6671901956          1        0.00
+
+
+Performing final tight davidson with tol: 1e-05
+
+Exiting variational iterations
+VARIATIONAL CALCULATION RESULT
+------------------------------
+Root             Energy     Time(s)
+   0    -6850.6807753952        0.00
+   1    -6850.6807753952        0.00
+   2    -6850.6807753951        0.00
+   3    -6850.6807753951        0.00
+   4    -6850.6671901956        0.00
+   5    -6850.6671901956        0.00
+
+
+Printing most important determinants
+ Det     weight  Determinant string
+State :0
+   0     7.55007262e-01  2 2 2 a 
+   1     3.77507097e-01  2 b 2 2 
+   2     3.77500169e-01  2 2 b 2 
+   3     3.10854786e-01  2 2 2 b 
+   4     1.55431605e-01  2 2 a 2 
+   5     1.55423184e-01  2 a 2 2 
+State :1
+   0     7.55007262e-01  2 2 2 b 
+   1     3.77512786e-01  2 2 a 2 
+   2     3.77494481e-01  2 a 2 2 
+   3     3.10854786e-01  2 2 2 a 
+   4     1.55445762e-01  2 b 2 2 
+   5     1.55409025e-01  2 2 b 2 
+State :2
+   0     5.00312690e-01  2 2 a 2 
+   1     5.00307776e-01  2 a 2 2 
+   2     4.99694450e-01  2 2 b 2 
+   3     4.99684699e-01  2 b 2 2 
+   4     9.83653975e-06  2 2 2 a 
+   5     5.83054278e-06  2 2 2 b 
+State :3
+   0     5.00313684e-01  2 2 b 2 
+   1     5.00306781e-01  2 b 2 2 
+   2     4.99700258e-01  2 a 2 2 
+   3     4.99678890e-01  2 2 a 2 
+   4     2.78525117e-05  2 2 2 a 
+   5     2.37469588e-05  2 2 2 b 
+State :4
+   0     4.91605795e-01  2 2 2 b 
+   1     4.91605793e-01  2 a 2 2 
+   2     4.91605793e-01  2 2 a 2 
+   3     3.02749200e-01  2 2 2 a 
+   4     3.02749198e-01  2 b 2 2 
+   5     3.02749198e-01  2 2 b 2 
+State :5
+   0     4.91605795e-01  2 2 2 a 
+   1     4.91605793e-01  2 2 b 2 
+   2     4.91605793e-01  2 b 2 2 
+   3     3.02749200e-01  2 2 2 b 
+   4     3.02749198e-01  2 2 a 2 
+   5     3.02749198e-01  2 a 2 2 
+State:   0,  E:   -6850.680775395, dE:       0.00
+State:   1,  E:   -6850.680775395, dE:       0.00
+State:   2,  E:   -6850.680775395, dE:       0.00
+State:   3,  E:   -6850.680775395, dE:       0.00
+State:   4,  E:   -6850.667190196, dE:    2981.54
+State:   5,  E:   -6850.667190196, dE:    2981.54
+
+**************************************************************
+PERTURBATION THEORY STEP  
+**************************************************************
+Peforming semistochastiPT for state: 0
+Deterministic PT calculation converged
+epsilon2: 5e-06
+PTEnergy: -6850.68077539521
+Time(s):  0.00170612335205078
+
+  Iter      EPTcurrent  State         EPTavg      Error     Time(s)
+     1  -6850.68077540      0 -6850.68077540         --        0.00
+     2  -6850.68077540      0 -6850.68077540         --        0.00
+     3  -6850.68077540      0 -6850.68077540         --        0.00
+     4  -6850.68077540      0 -6850.68077540         --        0.00
+     5  -6850.68077540      0 -6850.68077540   0.00e+00        0.00
+Semistochastic PT calculation converged
+epsilon2: 1e-07
+PTEnergy: -6850.68077539521 +/- 0.00e+00
+Time(s):  0.00203514099121094
+Peforming semistochastiPT for state: 1
+Deterministic PT calculation converged
+epsilon2: 5e-06
+PTEnergy: -6850.68077539521
+Time(s):  0.00209712982177734
+
+  Iter      EPTcurrent  State         EPTavg      Error     Time(s)
+     1  -6850.68077540      1 -6850.68077540         --        0.00
+     2  -6850.68077540      1 -6850.68077540         --        0.00
+     3  -6850.68077540      1 -6850.68077540         --        0.00
+     4  -6850.68077540      1 -6850.68077540         --        0.00
+     5  -6850.68077540      1 -6850.68077540   0.00e+00        0.00
+Semistochastic PT calculation converged
+epsilon2: 1e-07
+PTEnergy: -6850.68077539521 +/- 0.00e+00
+Time(s):  0.00240206718444824
+Peforming semistochastiPT for state: 2
+Deterministic PT calculation converged
+epsilon2: 5e-06
+PTEnergy: -6850.68077539512
+Time(s):  0.00246500968933105
+
+  Iter      EPTcurrent  State         EPTavg      Error     Time(s)
+     1  -6850.68077540      2 -6850.68077540         --        0.00
+     2  -6850.68077540      2 -6850.68077540         --        0.00
+     3  -6850.68077540      2 -6850.68077540         --        0.00
+     4  -6850.68077540      2 -6850.68077540         --        0.00
+     5  -6850.68077540      2 -6850.68077540   0.00e+00        0.00
+Semistochastic PT calculation converged
+epsilon2: 1e-07
+PTEnergy: -6850.68077539512 +/- 0.00e+00
+Time(s):  0.00273919105529785
+Peforming semistochastiPT for state: 3
+Deterministic PT calculation converged
+epsilon2: 5e-06
+PTEnergy: -6850.68077539512
+Time(s):  0.00279116630554199
+
+  Iter      EPTcurrent  State         EPTavg      Error     Time(s)
+     1  -6850.68077540      3 -6850.68077540         --        0.00
+     2  -6850.68077540      3 -6850.68077540         --        0.00
+     3  -6850.68077540      3 -6850.68077540         --        0.00
+     4  -6850.68077540      3 -6850.68077540         --        0.00
+     5  -6850.68077540      3 -6850.68077540   0.00e+00        0.00
+Semistochastic PT calculation converged
+epsilon2: 1e-07
+PTEnergy: -6850.68077539512 +/- 0.00e+00
+Time(s):  0.00305414199829102
+Peforming semistochastiPT for state: 4
+Deterministic PT calculation converged
+epsilon2: 5e-06
+PTEnergy: -6850.66719019555
+Time(s):  0.00310802459716797
+
+  Iter      EPTcurrent  State         EPTavg      Error     Time(s)
+     1  -6850.66719020      4 -6850.66719020         --        0.00
+     2  -6850.66719020      4 -6850.66719020         --        0.00
+     3  -6850.66719020      4 -6850.66719020         --        0.00
+     4  -6850.66719020      4 -6850.66719020         --        0.00
+     5  -6850.66719020      4 -6850.66719020   0.00e+00        0.00
+Semistochastic PT calculation converged
+epsilon2: 1e-07
+PTEnergy: -6850.66719019555 +/- 0.00e+00
+Time(s):  0.00339818000793457
+Peforming semistochastiPT for state: 5
+Deterministic PT calculation converged
+epsilon2: 5e-06
+PTEnergy: -6850.66719019555
+Time(s):  0.00345110893249512
+
+  Iter      EPTcurrent  State         EPTavg      Error     Time(s)
+     1  -6850.66719020      5 -6850.66719020         --        0.00
+     2  -6850.66719020      5 -6850.66719020         --        0.00
+     3  -6850.66719020      5 -6850.66719020         --        0.00
+     4  -6850.66719020      5 -6850.66719020         --        0.00
+     5  -6850.66719020      5 -6850.66719020   0.00e+00        0.00
+Semistochastic PT calculation converged
+epsilon2: 1e-07
+PTEnergy: -6850.66719019555 +/- 0.00e+00
+Time(s):  0.00374317169189453
+State:   0,  E:   -6850.680775395, dE:       0.00
+State:   1,  E:   -6850.680775395, dE:       0.00
+State:   2,  E:   -6850.680775395, dE:       0.00
+State:   3,  E:   -6850.680775395, dE:       0.00
+State:   4,  E:   -6850.667190196, dE:    2981.54
+State:   5,  E:   -6850.667190196, dE:    2981.54

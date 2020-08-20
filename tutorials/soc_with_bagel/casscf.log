@@ -1,0 +1,179 @@
+  ------------------------------
+  Spin-nonconserving complex FCI
+  ------------------------------
+
+    * nstate   :      6
+    * nclosed  :     23
+    * nact     :      4
+    * nvirt    :    108
+
+    * Relativistic FCI
+    * 7 active electrons in 4 orbitals.
+    * gaunt    : false
+    * breit    : false
+       - Coulomb: half trans                       0.00
+       - Coulomb: metric multiply                  0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.01
+imaginary part of energy is nonzero!! Perhaps Fock is not Hermite for some reasons 1.258663697e-12
+    * Integral transformation done. Elapsed time: 0.03
+
+       - jop, kop                                  0.00
+       - denom                                     0.00
+     guess   0:   closed 11.1                 open ..1.                
+     guess   1:   closed 1.11                 open .1..                
+     guess   2:   closed 111.                 open ...1                
+
+     guess   3:   closed 11.1                 open ..1.                
+     guess   4:   closed 1.11                 open .1..                
+     guess   5:   closed 111.                 open ...1                
+
+  === Relativistic FCI iteration ===
+
+      0   0  *   -6979.23144891     5.57e-14      0.01
+      0   1  *   -6979.23144891     2.72e-14      0.00
+      0   2  *   -6979.23144891     5.12e-14      0.00
+      0   3  *   -6979.23144891     7.13e-14      0.00
+      0   4  *   -6979.21985480     4.61e-14      0.00
+      0   5  *   -6979.21985480     4.61e-14      0.00
+
+     * ci vector, state   0
+       222b  (-0.1224557487,-0.7470616502)
+       22b2  (0.2194569358,0.5807865294)
+
+     * ci vector, state   1
+       22b2  (0.2419970246,-0.0278952096)
+       222b  (0.1974084018,0.0646300766)
+
+     * ci vector, state   2
+       22b2  (-0.6880442586,-0.0649021770)
+       222b  (-0.5907199275,-0.1796671410)
+
+     * ci vector, state   3
+       22b2  (-0.0091149016,0.2783607052)
+       222b  (0.0491937613,-0.0102964129)
+
+     * ci vector, state   4
+       2b22  (0.9715841568,0.2058560312)
+
+     * ci vector, state   5
+       2b22  (0.0786754554,0.0863579380)
+
+     * ci vector, state   0
+       222a  (-0.1980387894,-0.0470082863)
+
+     * ci vector, state   1
+       22a2  (-0.9304772292,0.0000000000)
+       222a  (-0.1618681435,-0.0743169123)
+
+     * ci vector, state   2
+       22a2  (-0.3250256728,0.0000000000)
+       222a  (0.1239273073,-0.1419606490)
+
+     * ci vector, state   3
+       222a  (0.6527623659,0.6820828762)
+       22a2  (-0.1690279204,0.0000000000)
+
+     * ci vector, state   4
+       2a22  (0.1076930922,-0.0452738184)
+
+     * ci vector, state   5
+       2a22  (-0.9680836780,-0.2217351386)
+       - FCI and RDMs                              0.01
+       - Coulomb: half trans                       0.00
+       - Coulomb: metric multiply                  0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00
+       - Coulomb: K operator                       0.01
+       - Coulomb: J operator                       0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00
+       - Coulomb: K operator                       0.00
+ ... the vector found in AugHess was not the lowest eigenvector ...
+       - Coulomb: J operator                       0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.01
+       - Coulomb: K operator                       0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00
+       - Coulomb: K operator                       0.00
+ ... the vector found in AugHess was not the lowest eigenvector ...
+       - Coulomb: half trans                       0.01
+       - Coulomb: metric multiply                  0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00
+imaginary part of energy is nonzero!! Perhaps Fock is not Hermite for some reasons 1.01570226e-12
+    * Integral transformation done. Elapsed time: 0.02
+
+       - jop, kop                                  0.00
+       - denom                                     0.00
+     guess   0:   closed 1.11                 open .1..                
+     guess   1:   closed 111.                 open ...1                
+     guess   2:   closed 11.1                 open ..1.                
+
+     guess   3:   closed 1.11                 open .1..                
+     guess   4:   closed 111.                 open ...1                
+     guess   5:   closed 11.1                 open ..1.                
+
+  === Relativistic FCI iteration ===
+
+      0   0  *   -6979.23144891     5.56e-14      0.01
+      0   1  *   -6979.23144891     5.02e-14      0.00
+      0   2  *   -6979.23144891     3.65e-14      0.00
+      0   3  *   -6979.23144891     6.80e-14      0.00
+      0   4  *   -6979.21985480     4.61e-14      0.00
+      0   5  *   -6979.21985480     4.61e-14      0.00
+
+     * ci vector, state   0
+       2b22  (-0.8014818591,0.1173499946)
+       222b  (0.2451570045,-0.0795084403)
+
+     * ci vector, state   1
+       222b  (-0.4688728318,0.6391822826)
+       2b22  (-0.4104574802,0.2417624138)
+       22b2  (0.0640278367,-0.0756700265)
+
+     * ci vector, state   2
+       222b  (0.4419384306,-0.3142028193)
+       2b22  (-0.3392952818,-0.0162299576)
+
+     * ci vector, state   3
+
+     * ci vector, state   4
+       22b2  (0.2934270242,-0.9496211607)
+       222b  (0.0306811744,-0.0992938280)
+
+     * ci vector, state   5
+
+     * ci vector, state   0
+       222a  (0.5162796568,-0.0034583327)
+       2a22  (0.0870522825,0.0000000000)
+       22a2  (-0.0571646519,0.0003616085)
+
+     * ci vector, state   1
+       222a  (-0.3562450727,0.0535391426)
+       2a22  (-0.0591008099,0.0000000000)
+
+     * ci vector, state   2
+       222a  (-0.7569632045,-0.0163596373)
+       2a22  (-0.0908593789,0.0000000000)
+       22a2  (0.0824700333,0.0017105884)
+
+     * ci vector, state   3
+       2a22  (0.9896231271,0.0000000000)
+       222a  (-0.1400029876,0.0019995854)
+
+     * ci vector, state   4
+
+     * ci vector, state   5
+       22a2  (-0.9939214090,-0.0000000022)
+       222a  (-0.1039259291,-0.0000000002)
+       - FCI and RDMs                              0.01
+       - Coulomb: half trans                       0.00
+       - Coulomb: metric multiply                  0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00

@@ -1,0 +1,70 @@
+
+
+**************************************************************
+Dice  Copyright (C) 2017  Sandeep Sharma
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+
+Author:       Sandeep Sharma
+Contributors: James E Smith, Adam A Holmes, Bastien Mussard
+For detailed documentation on Dice please visit
+https://sanshar.github.io/Dice/
+Please visit our group page for up to date information on other projects
+http://www.colorado.edu/lab/sharmagroup/
+**************************************************************
+
+
+**************************************************************
+Input file  :
+**************************************************************
+nocc 7
+6 2 3 0 1 4 5 
+nroots 1
+schedule
+0	1e-08
+end
+davidsonTol 5e-05
+dE 1e-08
+DoRDM
+nPTiter 0
+epsilon2 1e-07
+sampleN 200
+noio
+prefix /home/xubo/HandOn/dice/shci3
+maxiter 6
+
+
+
+
+
+**************************************************************
+VARIATIONAL STEP  
+**************************************************************
+Iter Root       Eps1   #Var. Det.               Energy   #Davidson     Time(s)
+   0    0    1.00e-08           1     -6850.6762469953          1        0.00
+   1    0    1.00e-08           1     -6850.6762469953          1        0.00
+
+Performing final tight davidson with tol: 5e-05
+
+Exiting variational iterations
+Calculating 2RDM
+-17.762287499015  7.49822091641994
+E from 2RDM: -6850.67624699529
+VARIATIONAL CALCULATION RESULT
+------------------------------
+Root             Energy     Time(s)
+   0    -6850.6762469953        0.18
+
+
+Printing most important determinants
+ Det     weight  Determinant string
+State :0
+   0     1.00000000e+00  2 2 2 a 
+We cannot perform PT RDM with stochastic PT. Disabling RDM.
+
+**************************************************************
+PERTURBATION THEORY STEP  
+**************************************************************

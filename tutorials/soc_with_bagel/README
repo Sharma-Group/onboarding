@@ -1,0 +1,3 @@
+Installation instruction can be found at http://nubakery.org/quickstart/installation_guide.html#build-bagel
+
+Intel MKL is highly recommended for BLAS, LAPACK and ScaLAPACK

@@ -1,0 +1,23 @@
+{ "bagel" : [
+
+{
+  "title" : "molecule",
+  "basis" : "sto-3g",
+  "df_basis" : "sto-3g",
+  "angstrom" : false,
+  "geometry" : [
+    { "atom" : "I",  "xyz" : [ 0.000000, 0.000000, 3.720616 ]}
+  ]
+},
+
+{
+  "title"  : "zcasscf",
+  "guant" : true,
+  "state" : [0,3],
+  "active" : [24,25,26,27],
+  "thresh" : 5.0e-7,
+  "nact"   : 4,
+  "nclosed"  : 23
+}
+
+]}

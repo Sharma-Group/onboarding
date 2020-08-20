@@ -1,0 +1,221 @@
+  * using 8 threads per process
+
+  ===============================================================
+    BAGEL - Freshly leavened quantum chemistry                   
+  ===============================================================
+
+  *** Geometry ***
+
+  { "atom" : "I", "xyz" : [      0.000000,      0.000000,      3.720616 ] },
+
+  Number of auxiliary basis functions:       27
+
+  Since a DF basis is specified, we compute 2- and 3-index integrals:
+    o Being stored without compression. Storage requirement is 0.000 GB
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.03
+       - 2-index ints                              0.00
+       - computing inverse                         0.02
+        elapsed time:        0.05 sec.
+
+
+  Number of basis functions:       27
+  Number of electrons      :       53
+
+
+    * METHOD: MOLECULE                             0.08
+
+  *** Geometry (Relativistic) ***
+       - 3-index ints post                         0.00
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.03
+       - 3-index ints post                         0.00
+
+       - Geometry relativistic (total)             0.04
+
+  *** Dirac HF ***
+
+       - 1-electron integrals                      0.01
+  === Nuclear Repulsion ===
+  
+     0.0000000000
+
+      * DIIS with orbital gradients will be used.
+
+       - SCF startup                               0.01
+
+  === Dirac RHF iteration (sto-3g, RKB) ===
+  
+       - Coulomb: half trans                       0.01
+       - Coulomb: metric multiply                  0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00
+      0      -6979.06225671          0.01811431           0.02
+       - Coulomb: half trans                       0.00
+       - Coulomb: metric multiply                  0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00
+imaginary part of energy is nonzero!! Perhaps Fock is not Hermite for some reasons 1.626358918e-12
+      1      -6979.05902838          0.00000574           0.02
+       - Coulomb: half trans                       0.00
+       - Coulomb: metric multiply                  0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00
+      2      -6979.05902838          0.00000000           0.02
+  
+    * SCF iteration converged.
+
+    * Permanent dipole moment: Dirac Hartree-Fock
+           (   -0.000000,    -0.000000,    -0.000000) a.u.
+  ---------------------------
+      CASSCF calculation     
+  ---------------------------
+
+  *** Geometry (Relativistic) ***
+       - 3-index ints post                         0.00
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.03
+       - 3-index ints post                         0.00
+
+       - Geometry relativistic (total)             0.03
+
+    * nclosed  :     23
+    * nact     :      4
+    * nvirt    :     27
+    * gaunt    : false
+    * breit    : false
+    * active space: 7 electrons in 4 orbitals
+       - Coulomb: half trans                       0.01
+       - Coulomb: metric multiply                  0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.00
+ 
+    ==== Active orbitals : ===== 
+         Orbital 24
+         Orbital 25
+         Orbital 26
+         Orbital 27
+    ============================ 
+
+ 
+    ==== Active orbitals : ===== 
+         Orbital 24
+         Orbital 25
+         Orbital 26
+         Orbital 27
+    ============================ 
+
+    * nstate   :      6
+
+  === Dirac CASSCF iteration (sto-3g) ===
+
+   * Using the second-order algorithm
+
+         0   0      -6979.23144891     5.83e-05      0.03
+         0   1      -6979.23144891     0.00e+00      0.03
+         0   2      -6979.23144891     0.00e+00      0.03
+         0   3      -6979.23144891     0.00e+00      0.03
+         0   4      -6979.21985480     0.00e+00      0.03
+         0   5      -6979.21985480     0.00e+00      0.03
+
+         res : 3.09e-07   lamb: 1.00e+00   eps : 1.53e-10   step: 4.61e-08    0.04
+         res : 1.79e-07   lamb: 1.00e+00   eps : 1.53e-10   step: 1.32e-04    0.04
+
+         1   0      -6979.23144891     3.10e-09      0.12
+         1   1      -6979.23144891     0.00e+00      0.12
+         1   2      -6979.23144891     0.00e+00      0.12
+         1   3      -6979.23144891     0.00e+00      0.12
+         1   4      -6979.21985480     0.00e+00      0.12
+         1   5      -6979.21985480     0.00e+00      0.12
+
+    * Second-order optimization converged. *   
+
+       - Coulomb: half trans                       0.00
+       - Coulomb: metric multiply                  0.00
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.01
+imaginary part of energy is nonzero!! Perhaps Fock is not Hermite for some reasons 1.01570226e-12
+    * Integral transformation done. Elapsed time: 0.02
+
+       - jop, kop                                  0.00
+       - denom                                     0.00
+     guess   0:   closed 111.                 open ...1                
+     guess   1:   closed 1.11                 open .1..                
+     guess   2:   closed 11.1                 open ..1.                
+
+     guess   3:   closed 111.                 open ...1                
+     guess   4:   closed 1.11                 open .1..                
+     guess   5:   closed 11.1                 open ..1.                
+
+  === Relativistic FCI iteration ===
+
+      0   0  *   -6979.23144891     3.72e-14      0.01
+      0   1  *   -6979.23144891     4.85e-14      0.00
+      0   2  *   -6979.23144891     6.56e-14      0.00
+      0   3  *   -6979.23144891     5.94e-14      0.00
+      0   4  *   -6979.21985480     4.61e-14      0.00
+      0   5  *   -6979.21985480     4.61e-14      0.00
+
+     * ci vector, state   0
+       2b22  (0.5930324810,0.3371376752)
+       22b2  (0.0583046703,0.3007390072)
+       222b  (-0.0783298648,0.2105881787)
+
+     * ci vector, state   1
+       222b  (-0.5304258509,0.0692256454)
+       22b2  (0.2788675840,0.0324798752)
+
+     * ci vector, state   2
+       222b  (-0.5150782026,0.0807605129)
+       22b2  (0.1977241900,-0.0162151615)
+       2b22  (0.1225424511,0.0740912186)
+
+     * ci vector, state   3
+       222b  (-0.0206735428,0.6145896069)
+       22b2  (-0.1777827842,0.3964954338)
+       2b22  (-0.3404008883,0.0961719699)
+
+     * ci vector, state   4
+       2b22  (0.4429439850,0.2238105874)
+       22b2  (-0.0791356791,0.1461414114)
+       222b  (-0.0666978749,-0.0622280469)
+
+     * ci vector, state   5
+       22b2  (0.4874734058,0.5778506035)
+       2b22  (-0.3289202077,-0.1815539933)
+       222b  (-0.0520977086,-0.0486063261)
+
+     * ci vector, state   0
+       22a2  (0.4674122526,-0.2625359582)
+       2a22  (0.0885674974,-0.3081222669)
+
+     * ci vector, state   1
+       222a  (0.6907264985,0.0000000000)
+       2a22  (-0.2737901467,0.2779862619)
+       22a2  (0.0183921907,0.0614296164)
+
+     * ci vector, state   2
+       222a  (-0.7135939410,0.0000000000)
+       2a22  (-0.2931883978,0.2497277258)
+       22a2  (-0.0599354778,0.0847129820)
+
+     * ci vector, state   3
+       2a22  (-0.3066114279,-0.3394174585)
+       22a2  (-0.3139004159,0.0050353988)
+
+     * ci vector, state   4
+       22a2  (-0.7506312250,0.0899689134)
+       2a22  (0.3643535733,0.0916342135)
+       222a  (0.0712512890,0.0000000000)
+
+     * ci vector, state   5
+       2a22  (0.4765524603,0.1385218590)
+       22a2  (0.0418323597,-0.1608409821)
+       222a  (-0.0912191665,0.0000000000)
+
+    * METHOD: ZCASSCF                              0.41
+
+
+  
+  ===============================================================
+
